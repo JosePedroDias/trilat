@@ -4,7 +4,7 @@ Simple computation of trilateration using
 matlab's Levenberg Marquardt curve-fitting algorithm.
 
 
-## Usage
+## Common usage
 
 ```javascript
 var trilat = require('trilat');
@@ -19,3 +19,9 @@ var input = [
 var output = trilat(input);
 // [ 2.205170988086251e-7, 9.999999779478834 ]
 ```
+
+
+## Usage without dependencies
+
+If you want to use this in the browser without browserify/webpack/etc,
+include the `dist.js` file, which exposes the symbol `trilat` as a global function.
