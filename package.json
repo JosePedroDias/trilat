@@ -1,15 +1,16 @@
 {
   "name": "trilat",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple computation of trilateration using matlab's Levenberg Marquardt curve-fitting algorithm.'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "browserify -e distgen.js -o dist.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "ml-curve-fitting": "^0.0.7",
-    "ml-matrix": "^2.1.0"
+    "ml-curve-fitting": "^0.0.7"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
   }
 }
